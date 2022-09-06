@@ -1,0 +1,185 @@
+@font-face {
+        font-family: 'wishleman';
+        src: url('Wishleman.ttf') format('truetype'), url('Wishleman.otf') format('opentype');
+        font-family: 'bahnschrift';
+        src: url('BAHNSCHRIFT.TTF') format('truetype');
+    }
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'bahnschrift';
+}
+
+.whatsapp-icon img{
+    height: 100px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 20px;
+    right: 20px;
+}
+
+header{
+    padding: 10px;
+    background-color: rgb(12,6,5);
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    position:-webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    img{
+        height: 100px;
+        border-radius: 10px
+    }
+    ul{
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        li {
+            a{
+                font-family: 'bahnschrift';
+                color: whitesmoke;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+#apogea{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#empresa{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    background-color: rgb(255, 255, 255);
+    .empresa__conteudo{
+        padding: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        .banner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            height: 200px;
+            width: 200px;
+            background-color: aliceblue;
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+            justify-content: center;
+            align-items: center;
+            .banner__conteudo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+#servicos{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    background-color: rgb(255, 255, 255);
+    .servicos__conteudo{
+        padding: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        .banner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            height: 200px;
+            width: 200px;
+            background-color: aliceblue;
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+            justify-content: center;
+            align-items: center;
+            .banner__conteudo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+footer{
+    padding: 50px;
+    display: flex;
+    background-color: rgb(12, 6, 5);
+    justify-content: space-around;
+    align-items: center;
+    .contato{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-size: 20px;
+        color: aliceblue;
+        a{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            color: whitesmoke;
+            img{
+                height: 50px;
+            }
+        }
+    }
+}
+.titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .marrom{
+        width: 30%;
+        height: 70px;
+        background-color: rgb(25, 9, 6);
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+    .verde{
+        width: 30%;
+        background-color: rgb(26, 54, 24);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        font-size: 30px;
+    }
+    .laranja{
+        width: 30%;
+        background-color: rgb(240, 74, 34);
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+}
