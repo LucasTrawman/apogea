@@ -19,165 +19,257 @@
   right: 20px;
 }
 
-header {
-  padding: 10px;
-  background-color: rgb(12, 6, 5);
+#header {
   display: flex;
-  gap: 100px;
-  list-style: none;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 999;
-  width: 100%;
+  height: 15vh;
 }
-header img {
-  height: 100px;
-  border-radius: 10px;
+#header img {
+  height: 120%;
 }
-header ul {
+#header ul {
   display: flex;
-  gap: 40px;
+  gap: 100px;
+}
+#header ul li {
   list-style: none;
 }
-header ul li a {
-  font-family: "bahnschrift";
-  color: whitesmoke;
+#header ul li a {
   text-decoration: none;
+  padding: 5px;
+  color: black;
 }
 
-#apogea {
-  padding: 100px;
+#home {
+  background-image: url(../img/background1.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+#home .fundo {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 80px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 100px;
+  gap: 30px;
+  width: 100%;
+  height: 100%;
+}
+#home .fundo p {
+  font-size: 30px;
+  font-weight: 400;
+  width: 45%;
+  line-height: 1.5;
+}
+
+h1 {
+  width: 45%;
+  font-size: 70px;
+  font-weight: 400;
+  color: rgb(32, 32, 32);
 }
 
 #empresa {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  padding: 80px;
+}
+#empresa div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+  gap: 60px;
+}
+#empresa div p {
+  font-size: 25px;
+  font-weight: 300;
+  width: 64%;
+  line-height: 1.5;
+}
+#empresa div p .span1 {
+  color: rgb(247, 115, 5);
+  font-weight: 400;
+}
+#empresa div p .span2 {
+  color: rgb(31, 52, 19);
+  font-style: italic;
+  font-weight: 400;
+}
+#empresa div a {
+  background: rgb(25, 7, 5);
+  padding: 20px;
+  display: none;
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 50px;
-  background-color: rgb(255, 255, 255);
+  color: white;
+  font-size: 20px;
+  width: 210px;
 }
-#empresa .empresa__conteudo {
-  padding: 50px;
-  width: 100%;
+#empresa img {
+  height: 300px;
+  padding-right: 100px;
+}
+
+.empresa1 {
+  background-image: url(../img/background1.jpg);
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: 100vw;
   display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 100px;
+}
+.empresa1 h2 {
+  color: white;
+  width: 50%;
+  font-size: 50px;
+  text-align: right;
+  text-shadow: 5px 5px 5px black;
+}
+
+.empresa2 {
+  display: flex;
+  padding: 80px;
   justify-content: space-around;
-}
-#empresa .empresa__conteudo .banner {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: rgb(244, 255, 244);
+  height: 80vh;
+}
+.empresa2 div {
+  width: 250px;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
-  height: 200px;
-  width: 200px;
-  background-color: aliceblue;
-  border-radius: 15px;
-  padding: 15px;
-  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
-  justify-content: center;
-  align-items: center;
 }
-#empresa .empresa__conteudo .banner .banner__conteudo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.empresa2 div h3 {
+  font-size: 35px;
+  text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.5);
+}
+.empresa2 div h4 {
+  font-size: 23px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 #servicos {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  background-image: url(../img/servicos.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+#servicos .fundo {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 80px;
   gap: 50px;
-  background-color: rgb(255, 255, 255);
 }
-#servicos .servicos__conteudo {
-  padding: 50px;
-  width: 100%;
+#servicos .fundo p {
+  font-size: 50px;
+}
+#servicos .fundo .servicos__banner {
   display: flex;
+  gap: 100px;
   justify-content: space-around;
 }
-#servicos .servicos__conteudo .banner {
+#servicos .fundo .servicos__banner div {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
   flex-direction: column;
+  width: 300px;
+  padding: 40px;
   gap: 10px;
-  height: 200px;
-  width: 200px;
-  background-color: aliceblue;
-  border-radius: 15px;
-  padding: 15px;
-  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
-  justify-content: center;
+  flex-wrap: wrap;
+}
+#servicos .fundo .servicos__banner div h5 {
+  font-size: 25px;
+  text-align: center;
+}
+#servicos .fundo .servicos__banner div p {
+  font-size: 16px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.clientes {
+  padding: 100px;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
-#servicos .servicos__conteudo .banner .banner__conteudo {
+.clientes .titulo {
+  font-size: 50px;
+}
+.clientes .text {
+  font-weight: 300;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-direction: column;
+  gap: 90px;
+  width: 33%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2;
+}
+.clientes .text .p2 {
+  width: 70%;
+  color: rgb(31, 52, 19);
+  font-size: 25px;
 }
 
 footer {
-  padding: 50px;
+  background-color: rgb(25, 7, 5);
   display: flex;
-  background-color: rgb(12, 6, 5);
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-footer .contato {
+footer .left {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  font-size: 20px;
-  color: aliceblue;
+  gap: 80px;
 }
-footer .contato a {
+footer .left .titulo {
+  color: white;
+  font-size: 50px;
+}
+footer .left .links {
   display: flex;
-  align-items: center;
-  gap: 15px;
+  flex-direction: column;
+  gap: 50px;
+  font-size: 22px;
+}
+footer .left .links a {
   text-decoration: none;
-  color: whitesmoke;
 }
-footer .contato a img {
-  height: 50px;
+footer .left .links a .p1 {
+  color: rgb(247, 115, 5);
 }
-
-.titulo {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+footer .left .links a .p2 {
+  color: white;
 }
-.titulo .marrom {
-  width: 30%;
-  height: 70px;
-  background-color: rgb(25, 9, 6);
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 15px;
-}
-.titulo .verde {
-  width: 30%;
-  background-color: rgb(26, 54, 24);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: aliceblue;
-  font-size: 30px;
-}
-.titulo .laranja {
-  width: 30%;
-  background-color: rgb(240, 74, 34);
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
+footer img {
+  height: 350px;
 }/*# sourceMappingURL=style.css.map */
