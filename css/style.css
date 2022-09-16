@@ -25,9 +25,8 @@
   align-items: center;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.5);
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  width: 100vw;
   height: 15vh;
 }
 #header img {
@@ -47,26 +46,26 @@
 }
 
 #home {
-  background-image: url(../img/background1.jpg);
-  height: 100vh;
+  background-image: url(../img/background_home.jpeg);
   background-repeat: no-repeat;
   background-size: 100vw;
 }
 #home .fundo {
-  background-color: rgba(255, 255, 255, 0.4);
   padding: 80px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 30px;
+  justify-content: end;
+  align-items: center;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
+  text-align: end;
 }
 #home .fundo p {
-  font-size: 30px;
-  font-weight: 400;
-  width: 45%;
-  line-height: 1.5;
+  font-weight: 500;
+  color: white;
+  width: 50%;
+  font-size: 50px;
+  text-align: right;
+  text-shadow: 1px 1px 1px black;
 }
 
 h1 {
@@ -120,25 +119,7 @@ h1 {
   padding-right: 100px;
 }
 
-.empresa1 {
-  background-image: url(../img/background1.jpg);
-  height: 80vh;
-  background-repeat: no-repeat;
-  background-size: 100vw;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  padding: 100px;
-}
-.empresa1 h2 {
-  color: white;
-  width: 50%;
-  font-size: 50px;
-  text-align: right;
-  text-shadow: 5px 5px 5px black;
-}
-
-.empresa2 {
+.valores {
   display: flex;
   padding: 80px;
   justify-content: space-around;
@@ -146,7 +127,7 @@ h1 {
   background-color: rgb(244, 255, 244);
   height: 80vh;
 }
-.empresa2 div {
+.valores div {
   width: 250px;
   display: flex;
   flex-direction: column;
@@ -154,11 +135,11 @@ h1 {
   align-items: center;
   gap: 10px;
 }
-.empresa2 div h3 {
+.valores div h3 {
   font-size: 35px;
   text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.5);
 }
-.empresa2 div h4 {
+.valores div h4 {
   font-size: 23px;
   font-weight: 300;
   text-align: center;
@@ -171,42 +152,45 @@ h1 {
   background-size: 100vw;
 }
 #servicos .fundo {
-  background-color: rgba(255, 255, 255, 0.8);
-  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding: 80px;
-  gap: 50px;
+  padding: 50px 20px 50px 20px;
+  gap: 30px;
 }
 #servicos .fundo p {
-  font-size: 50px;
+  font-size: 40px;
 }
 #servicos .fundo .servicos__banner {
   display: flex;
-  gap: 100px;
-  justify-content: space-around;
-}
-#servicos .fundo .servicos__banner div {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: white;
-  flex-direction: column;
-  width: 300px;
-  padding: 40px;
+  justify-content: space-around;
   gap: 10px;
+  width: 100%;
+  height: 100%;
   flex-wrap: wrap;
 }
-#servicos .fundo .servicos__banner div h5 {
-  font-size: 25px;
+#servicos .fundo .servicos__banner .banner {
+  display: flex;
   text-align: center;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  width: 250px;
+  height: 350px;
+  background-color: white;
+  padding: 20px;
+  gap: 10px;
 }
-#servicos .fundo .servicos__banner div p {
-  font-size: 16px;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.6);
+#servicos .fundo .servicos__banner .banner h5 {
+  font-size: 20px;
+}
+#servicos .fundo .servicos__banner .banner p {
+  font-size: 15px;
+  color: rgb(113, 113, 113);
+  font-weight: 300;
 }
 
 .clientes {
