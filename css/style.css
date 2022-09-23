@@ -127,6 +127,9 @@ h1 {
   background-color: rgb(244, 255, 244);
   height: 80vh;
 }
+.valores img {
+  width: 100px;
+}
 .valores div {
   width: 250px;
   display: flex;
